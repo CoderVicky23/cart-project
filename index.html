@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>CART PROJECT</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<!-- navigation bar  -->
+
+	<section id="zero" class="mb-3">
+		<nav class="navbar navbar-light bg-dark justify-content-between fixed-top">
+			<a class="navbar-brand text-light">NIKE -India</a>
+			<form class="form-inline">
+				<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0 mr-4" type="submit">Search</button>
+				<button class="btn btn-outline-light my-2 mx-5 my-sm-0" data-toggle="modal"
+					data-target=".bd-example-modal-lg">MY CART</button>
+			</form>
+		</nav>
+	</section>
+
+	<!-- shopping grid  -->
+
+	<section id="one">
+		<div class="row mx-0 p-2">
+			<div class="col-md-9 p-0">
+				<div class="grid-container"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- cart  -->
+
+	<section id="two">
+
+		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-xl">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title text-primary font-weight-bolder" id="exampleModalLongTitle">MY CART <i
+								class="fas fa-shopping-cart"></i></h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="cart-address text-right">
+							<i class="fas fa-map-marked-alt text-primary"></i> Deliver to <span class="font-weight-bolder">Palwal 121102</span>
+						</div>
+						<div class="cart-row row">
+							<div class="cart-items col-sm-7 d-flex flex-column">
+								<div class="no-items">Nothing in the Cart, Shop Now!</div>
+							</div>
+							<div class="cart-billing col-sm-4">
+								<div class="cart-billing-heading font-weight-bolder">PRICE DETAILS</div>
+								<div class="cart-billing-content-main d-flex justify-content-between font-weight-bold">
+									<div id="cart-billing-price" class="">Price </div>
+									<div id="cart-billing-amount" class="">&#8377;00.00</div>
+								</div>
+								<div class="cart-billing-content d-flex justify-content-between">
+									<div class="">Discount</div>
+									<div class="text-success">-&#8377;00.00</div>
+								</div>
+								<div class="cart-billing-content d-flex justify-content-between">
+									<div class="">Coupons for you</div>
+									<div class="text-success">-&#8377;00.00</div>
+								</div>
+								<div class="cart-billing-content d-flex justify-content-between">
+									<div class="">Delivery charges</div>
+									<div class="text-success">FREE</div>
+								</div>
+								<div class="cart-billing-content-main d-flex justify-content-between font-weight-bolder">
+									<div id="cart-billing-price" class="">Total Amount </div>
+									<div id="cart-billing-amount" class="">&#8377;00.00</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Continue Shopping</button>
+						<button type="button" class="btn btn-primary">Proceed to Checkout</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Optional JavaScript -->
+	<script src="main.js"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
